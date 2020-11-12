@@ -5,7 +5,7 @@
 # Instructor: Dr. Randy Bower
 # Date: Nov 11 2020
 # Description: This is a change  to the calculator to include functions and loops
-# Copy Wrong: This is, REALLY, my OWN work
+# Copy Wrong: This is, REALLY, my own work
 
 # Greating
 print("Hello. Please give us a range to work with between -100 and 100")
