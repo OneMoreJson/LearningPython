@@ -5,166 +5,81 @@
 # Instructor: Dr. Randy Bower
 # Date: Nov 11 2020
 # Description: This is a change  to the calculator to include functions and loops
-# Copy Wrong: This is, REALLY, my own work (It was challenging but worth it)
+# Copy Wrong: This is my own work 
 
-# Vars Set Up
-
-cont = True
-
-highNum = False
-lowNum = False
-
-numA = False
-numB = False
 
 # Build Calc Functions
 
 def addFunc(numA, numB):
-    answer1 = numA + numB
-    return answer1
+    return numA + numB
 
 def subFunc(numA, numB):
-    answer2 = numB - numA
-    return answer2
+    return numA - numB
 
 def multFunc(numA, numB):
-    answer3 = numB * numA
-    return answer3
+    return numB * numA
 
-def divFunc(numA, numB):
-    if numA == 0 or numB == 0:
-        answer4 = "an error, you cannot divide by 0."
-        return answer4
+def divFunc(numA, numB): 
+    return numA / numB
+
+# Check in Range Function
+
+def isinrange (lr, hr, n):
+    if n > lr and n < hr:
+        return True
     else:
-        answer4 = numA / numB
-        return answer4
-
-# Build Range Number Requests Functions
-
-def highNumFunc(highNum):
-    while highNum == False or highNum < -100 or highNum > 100:
-        highNum = int(input("Please provide a number as your high number:   "))
-        print()
-        if highNum < -100 or highNum > 100:
-            print("Please select BETWEEN -100 and 100.")
-            print()
-        else:
-            print("Thank you.  Your high number is:", highNum)
-            print()
-            return highNum
-
-
-def lowNumFunc(lowNum,highNum):
-    while lowNum == False or lowNum < -100 or lowNum > highNum:
-        lowNum = int(input("Please provide a number as your low number:   "))
-        print()
-        if lowNum < -100 or lowNum > 100:
-            print("Please select BETWEEN -1004 and 100.")
-            print()
-        elif lowNum > highNum:
-            print("Please select a number lower than your high number.   ")
-            print()
-        else:
-            print("Thank you.  Your low number is:   ", lowNum)
-            print()
-            return lowNum
-
-        
-# Build Number Requests for Calc Functions
+        return False 
     
-def numAFunc(numA):
-    print("Now please select two numbers between", highNum, "and", lowNum, "and we will provide their sum, difference, product and quotient.")
-    print()
-    while numA == False or numA < lowNum or numA > highNum:
-        numA = int(input("Please select a number:   "))
-        print()
-        if numA < lowNum or numA > highNum:
-            print("Please choose a number between the range of", lowNum, "and", highNum)
-            print()
-        else:
-            print("Thank you.  You chose:   ", numA)
-            print()
-            return numA
+# Begin Loop
 
-
-def numBFunc(numB):
-    while numB == False or numB < lowNum or numB > highNum:
-        numB = int(input("Please select a Second number:   "))
-        print()
-        if numB < lowNum or numB > highNum:
-            print("Please choose a number between the range of", lowNum, "and", highNum)
-            print()
-        else:
-            print("Thank you.  You chose:   ", numB)
-            print()
-            return numB
-
-# Loop Set Up
+cont = True
 
 while cont == True: 
-    if cont == False:
-        break
-    else:
-    # Greeting Set Up
     
-        print("Hello. Please give us a range to work with between -100 and 100")
-        print()
+    # Input Values 
 
-        # Get High Number for Range
+    low = int(input("Please select your low number between 100 and -100:  "))
+    high = int(input("Please select your high number between 100 and -100:  "))
 
-        highNum = highNumFunc(highNum)
+    numA = int(input("Please select the first number between " + str(high) + " and " + str(low) + " to be calculated:  "))
+    numB = int(input("Please select the second number between " + str(high) + " and " + str(low) + " to be calculated:  "))
 
-        # Get Low Number for Range
 
-        lowNum = lowNumFunc(lowNum, highNum)
-
-        # Get First number for Calc
-
-        numA = numAFunc(numA)
-
-        # Get Second number for Calc
-
-        numB = numBFunc(numB)
-
-        # Call Fuctions and Store in CalcAnswers
+    # Error detection function called twice
+    
+    if isinrange(low,high,numA) == True and isinrange(low,high,numB) == True:
         
-        addAnswer = addFunc(numA, numB)
-        
-        subAnswer = subFunc(numA, numB)
-        
-        multAnswer = multFunc(numA, numB)
-        
-        divAnswer = divFunc(numA, numB)
-        
+        # Calc Functions called and reported with print (NO print statments in calc functions)
 
-        # Print CalcAnswers
-
-        print("When you add", numA, "to", numB, "the sum is", addAnswer)
-        print()
-        print("When you subtract", numB, "from", numA, "the difference is", subAnswer)
-        print()
-        print("When you multiply", numA, "with", numB, "the product is", multAnswer)
-        print()
-        print("When you divide", numA, "by", numB, "the quotent is", divAnswer)
-        print()
-
-        # Ask to Continue
-
-        response = input("Would you Like To Continue, type 'Y' or 'N'   ")
-        
-        if response == 'y' or response == 'Y':
-            numA = False
-            numB = False
-            highNum = False
-            lowNum = False
-            cont = True
-        
-        elif response == 'n' or response == 'N':
-            cont = False
-            print()
-            print("Thank you for letting us calculate more numbers!")  
-            
+        print("When you add", numA, "to", numB, "the sum is", addFunc(numA, numB))
+        print("When you subtract", numB, "from", numA, "the difference is", subFunc(numA, numB))
+        print("When you multiply", numA, "with", numB, "the product is", multFunc(numA, numB))
+        if numB == 0:
+            print("no calculations are performed")
         else:
-            print()
-            print("I'm sorry.  You did not select either 'Y' or 'N.' Goodbye.")
-            break
+            print("When you divide", numA, "by", numB, "the quotent is", divFunc(numA, numB))
+    else:
+        print("no calculations are performed")  
+    
+    # Continue Loop or Not
+    
+    response = input("Would you Like To Continue, type 'Y' or 'N'")
+    if response == 'y' or response == 'Y':
+        numA = False
+        numB = False
+        highNum = False
+        lowNum = False
+        cont = True
+
+    elif response == 'n' or response == 'N':
+        cont = False
+        print("Thank you for letting us calculate more numbers!")  
+
+    else:
+        print("no calculations are performed")
+        numA = False
+        numB = False
+        highNum = False
+        lowNum = False
+        cont = True
+        
