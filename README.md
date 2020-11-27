@@ -1,6 +1,6 @@
 # AMU_IntroToPython
 
-### 2020 11 27 || Readme
+### 2020 11 27 : 1210 || Readme
 Reorganized all readme entries.  I placed everything in a Scrivener document.  The idea is to write here, in a wordprocessing application.  It will help me check my spelling.  It will also provide a backup for all work.  Finally, when the day is over and I’m uploading into GH, I will have everything I did through the day written here…I only need to copy and paste.  
 Another thing I wanted to do before the Readme files became overwhelmingly large.  I wanted the file to read backwards.  You should read what is recent at the beginning of the document.  If you want to follow what came before, scroll and it should be easy to see.  Finally, I created lines to break apart days.  Sometimes you will have titles, subtitles with the day, and sub-sub titles with the time.  These needed to be “blocked” in a manner that is less confusing than continuing to look to see what day you are on.  
 
