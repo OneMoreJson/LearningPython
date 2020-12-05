@@ -4,29 +4,25 @@
 # Course: ENTD220
 # Instructor: Dr. Randy Bower
 # Date: Nov 25 2020
-# Description: This now works with the module MyLib 
+# Description: This now works with the module MyLib.  I highlighted comments pertaining to 
+#              this week and marked the older comments.  I hope this helps reading everthing
 # Copy Wrong: This is my own work
 
+
+# WEEK 05: As it says...imports the module
 import MyLib
 
 
-# Building User Defined Exceptions
+# Old... Building User Defined Exceptions
 class UserInputOutsideRange(Exception):
     pass
 
-
-
-
-    
-# Begin Loop
-
+# Old... Begin Loop
 cont = True
 
 while cont == True: 
     
-    # Input Values with Exception Control
-
-    # First exception begins here with a while loop to control the response...
+    # Old... Gather inputs for user define ranges
     bugA = True
     while bugA == True:
         try:
@@ -44,7 +40,7 @@ while cont == True:
             bugA = True
             print("You did not input a number")
 
-    # Second exception begins here with a while loop to control the response...
+    # Old... Gather inputs for user defined numbers to be calculated
     bugB = True
     while bugB == True:
         try:
@@ -54,24 +50,46 @@ while cont == True:
         except ValueError:
             print("You did not input a number")
 
+    # WEEK 05: String Function ... It's funny cause we go from intiger->to string-> and later back to an intiger inside the sCalc function
 
-    # Error detection function called twice
-    
+    a = str(numA)
+    b = str(numB)
+    c = ['+', '-', '*', '/']
+    d = 0  # This will help move us through the operators in the final string
+
+    dMathString = a + ", " + b + ", " + c[0 + d]  # WEEK 05: Combining to make 1 final string
+
+    # Old...Error detection function called twice
     if MyLib.isinrange(low,high,numA) == True and MyLib.isinrange(low,high,numB) == True:
         
-        # Calc Functions called and reported with print (NO print statments in calc functions)
+        # WEEK 05: Calc Functions called through the sCacl Function; results printed
+        print("When you add", numA, "to", numB, "the sum is", MyLib.sCalc(dMathString))
+        d = d + 1  # WEEK 05: d var is increased to move string to the next operator
+        dMathString = a + ", " + b + ", " + c[0 + d]
 
-        print("When you add", numA, "to", numB, "the sum is", MyLib.addFunc(numA, numB))
-        print("When you subtract", numB, "from", numA, "the difference is", MyLib.subFunc(numA, numB))
-        print("When you multiply", numA, "with", numB, "the product is", MyLib.multFunc(numA, numB))
+        print("When you subtract", numB, "from", numA, "the difference is",  MyLib.sCalc(dMathString))
+        d = d + 1
+        dMathString = a + ", " + b + ", " + c[0 + d]
+
+        print("When you multiply", numA, "with", numB, "the product is",  MyLib.sCalc(dMathString))
+        d = d + 1
+        dMathString = a + ", " + b + ", " + c[0 + d]
+
         if numB == 0:
             print("no calculations are performed")
+            d = d - 3  # WEEK 05: d var is reset to the first operator to restart calcs
+            dMathString = a + ", " + b + ", " + c[0 + d]
         else:
-            print("When you divide", numA, "by", numB, "the quotent is", MyLib.divFunc(numA, numB))
-    else:
-        print("no calculations are performed")  
+            print("When you divide", numA, "by", numB, "the quotent is",  MyLib.sCalc(dMathString))
+            d = d - 3  # WEEK 05: d var is reset to the first operator to restart calcs
+            dMathString = a + ", " + b + ", " + c[0 + d]
     
-    # Continue Loop or Not
+    else:
+        print("no calculations are performed")
+        d = 0  # WEEK 05: if things break c and d vars are reset to 0 
+        dMathString = a + ", " + b + ", " + c[0]
+    
+    # Old... Continue Loop or Not
     
     response = input("Would you Like To Continue, type 'Y' or 'N'")
     if response == 'y' or response == 'Y':
