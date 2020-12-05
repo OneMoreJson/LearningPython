@@ -1,5 +1,11 @@
 # AMU_IntroToPython
 
+## 2020 12 04 : 2100 || Week 05 Lesson
+Completed assignment.  This was challenging as we had a lot of, well, dumb requirements that mad the work of changing a string to and integer into a string into an integer again just to make sure we could do something for the assignment.  Still, we need to show we know what is going on. I get that.  It was challenging and I enjoyed the task.  I had to work with and outside Jupiter Notebooks.  So, that was interesting.  
+BTW, I forgot, but I updated Week05 Assignment to include challenges that were apparently required for the assignment.  
+
+-----------------------------------------------------------------------------
+
 ## 2020 11 28 : 1330 || Week 05 Lessons
 Ran through the weeks lessons on modules and string iteration with Jupiter Notebooks.  That took a lot longer.  Some of the lessons pushed me to use the IDLE.  I still need to work on this.  Finally, I prepared the docs to work on week 05 assignment.  I’m going to work on the assignment tomorrow.
 
