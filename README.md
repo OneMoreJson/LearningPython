@@ -1,5 +1,18 @@
 # AMU_IntroToPython
 
+## 2020 12 09 : 1115 || Week 06 Forum
+Completed the forums and the responses.  
+
+-----------------------------------------------------------------------------
+
+## 2020 12 07 : 0830 || Week 06 Lesson
+Focus is on the lessons and working through them in the JNBs.
+
+### 11:21 || Week 06 Lesson
+Completed all lessons reviews and wrote everthing in J NB. Might work on the forums for the week.  It would be good to do that and not have to worry about them later.  Also, I could get started on the actually assignment.  BTW, we studied Lists, Tuples, and Dictionaries.  I stumbled across sets.  I don’t know if studied these before but it was funny.  I was trying to write a dictionary and placed a comma instead of a colon.  tada, it is a Set.  
+
+-----------------------------------------------------------------------------
+
 ## 2020 12 04 : 2100 || Week 05 Lesson
 Completed assignment.  This was challenging as we had a lot of, well, dumb requirements that mad the work of changing a string to and integer into a string into an integer again just to make sure we could do something for the assignment.  Still, we need to show we know what is going on. I get that.  It was challenging and I enjoyed the task.  I had to work with and outside Jupiter Notebooks.  So, that was interesting.  
 BTW, I forgot, but I updated Week05 Assignment to include challenges that were apparently required for the assignment.  
