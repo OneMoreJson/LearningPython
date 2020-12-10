@@ -3,6 +3,14 @@
 ## 2020 12 09 : 1115 || Week 06 Forum
 Completed the forums and the responses.  
 
+### 2110 || Week 06 Assignment
+Prepared to work on this weeks assignments.  Moved a dup into the Week 06 and updated comments.  Also created a scratch sheet for playing out how I want to accomplish the problem.  
+1. I need to create menu using a list
+2. I need to create a function that returns results to a dictionary
+3. Dictionary is called “allInOne”
+4. I need to update my print response to show: “num1 + num2 = result”
+5. The final needs to print 
+
 -----------------------------------------------------------------------------
 
 ## 2020 12 07 : 0830 || Week 06 Lesson
