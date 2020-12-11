@@ -1,47 +1,95 @@
-# Old... Build Calc Functions for Calculator
+# Week 06: Kept the calc functions but pushed 0 division error detect to divNum Function
+def addNum(y, z):
+    return y + z
 
-def addFunc(numA, numB):
-    return numA + numB
+def subNum(y, z):
+    return z - y
 
-def subFunc(numA, numB):
-    return numA - numB
+def multNum(y, z):
+    return y * z
 
-def multFunc(numA, numB):
-    return numB * numA
+def divNum(y, z):
+    if z == 0:
+        return "Not able to divide by 0"
+    else:
+        return y / z
 
-def divFunc(numA, numB): 
-    return numA / numB
 
 # Old... Check in Range Function for Calculator
-
 def isinrange (lr, hr, n):
     if n > lr and n < hr:
         return True
     else:
         return False 
 
-# Old... New Function taking in the one string, parses it, then calls calc 
-# functions according to the expression found in the string
-
-def sCalc(expression):
-    breakString = expression.split(", ")
-    
-    if breakString[2] == "+":
-        answer = addFunc(int(breakString[0]), int(breakString[1]))
-        return answer
-        
-    elif breakString[2] == "-":
-        answer = subFunc(int(breakString[0]), int(breakString[1]))
-        return answer
-        
-    elif breakString[2] == "*":
-        answer = multFunc(int(breakString[0]), int(breakString[1]))
-        return answer
-
-    elif breakString[2] == "/":
-        answer = divFunc(int(breakString[0]), int(breakString[1]))
-        return answer
-        
+# Week 06: Needed to simplify user response for later
+def simpleUI(r):
+    if r == "1" or r.lower() == "add" or r.lower() == "a":
+        return '+'
+    elif r == "2" or r.lower() == "subtract" or r.lower() == "s":
+        return '-'
+    elif r == "3" or r.lower() == "multiply" or r.lower() == "m":
+        return '*'
+    elif r == "4" or r.lower() == "divide" or r.lower() == "d":
+        return '/'
+    elif r == "5" or r.lower() == "all":
+        return 'a'
+    elif r == '6' or r.lower() == "exit"or r.lower() == "e":
+        return 'e'
     else:
-        answer = "no operator found"
-        
+        return 'e'
+
+
+# Week 06: Submitting sCalc responses to the dictionary
+def allInOne(a, b, operator):
+    # Week 06: Establishing the dictionary 
+    preRes = {'Add': 0, 'Subtract': 0, 'Multiply': 0, 'Divide': 0}
+
+    if operator == "+":
+        preRes['Add'] = addNum(a, b)
+        preRes['Subtract'] = 0
+        preRes['Multiply'] = 0
+        preRes['Divide'] = 0
+        return preRes['Add'], preRes['Subtract'], preRes['Multiply'], preRes['Divide']
+
+    elif operator == "-":
+        preRes['Add'] = 0
+        preRes['Subtract'] = subNum(a, b)
+        preRes['Multiply'] = 0
+        preRes['Divide'] = 0
+        return preRes['Add'], preRes['Subtract'], preRes['Multiply'], preRes['Divide']
+
+    elif operator == "*":
+        preRes['Add'] = 0
+        preRes['Subtract'] = 0
+        preRes['Multiply'] = multNum(a, b)
+        preRes['Divide'] = 0
+        return preRes['Add'], preRes['Subtract'], preRes['Multiply'], preRes['Divide']
+
+    elif operator == "/":
+        preRes['Add'] = 0
+        preRes['Subtract'] = 0
+        preRes['Multiply'] = 0
+        preRes['Divide'] = divNum(a, b)
+
+
+    elif operator == "a":
+        preRes['Add'] = addNum(a, b)
+        preRes['Subtract'] = subNum(a, b)
+        preRes['Multiply'] = multNum(a, b)
+        preRes['Divide'] = divNum(a, b)
+        return preRes['Add'], preRes['Subtract'], preRes['Multiply'], preRes['Divide']
+
+    elif operator == 'e':
+        preRes['Add'] = 0
+        preRes['Subtract'] = 0
+        preRes['Multiply'] = 0
+        preRes['Divide'] = 0
+        return preRes['Add'], preRes['Subtract'], preRes['Multiply'], preRes['Divide']
+
+    else:
+        preRes['Add'] = 0
+        preRes['Subtract'] = 0
+        preRes['Multiply'] = 0
+        preRes['Divide'] = 0
+        return preRes['Add'], preRes['Subtract'], preRes['Multiply'], preRes['Divide']
