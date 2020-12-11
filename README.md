@@ -1,5 +1,13 @@
 # AMU_IntroToPython
 
+## 2020 12 10 : 0830 || Week 06 Assignment
+Started the work on the assignment.  Working with the instructions and “sketching” the possibilities using J NB.
+
+### 2100 || Week 06 Assignment
+Spent the entire day working on this.  This was not an easy project.  I ripped out a ton of stuff and remade other stuff to meet the requirements.  I’m still having an issue with the division… Funny, it works fine when I select the All function. I’ll have to finish that before I send it.  
+
+-----------------------------------------------------------------------------
+
 ## 2020 12 09 : 1115 || Week 06 Forum
 Completed the forums and the responses.  
 
