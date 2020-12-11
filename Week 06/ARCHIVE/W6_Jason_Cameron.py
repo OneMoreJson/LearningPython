@@ -15,14 +15,20 @@ import MyLib
 class UserInputOutsideRange(Exception):
     pass
 
-# Week 06: Calling Function to Ask the user what they want to do
-#          Note: Because of this, I pushed the "menu" list to MyLib; 
-#          I hope this is ok.  
-finalSimpleUI = MyLib.userInputFunc()
+# Week 06: Setting up the menu as a list
+#          Please note confusion about last week's sCalc became 
+#          the "All" selection
+menu = ["Add", "Subtract", "Multiply", "Divide", "All", "Exit"]
+
+# Week 06: Asking the user what they want to do
+userSelect = input("Please select one of the following:\n***Hint: You can select the number for your selection***\n1. " + menu[0] + "\n2. " + menu[1] + "\n3. " + menu[2] + "\n4. " + menu[3] + "\n5. " + menu[4] + "\n6. " + menu[5] + "\n\n")
 
 # Old... Begin Loop
 cont = True
+
 while cont == True: 
+
+    finalSimpleUI = MyLib.simpleUI(userSelect)
     
     if finalSimpleUI == 'e':
         cont = False
@@ -56,7 +62,7 @@ while cont == True:
             except ValueError:
                 print("You did not input a number")
 
-        # Week 06: Establishing the res dictionary per Assignment Requirements
+        # Week 06: Establishing the res dictionary 
         res = {'Add': 0, 'Subtract': 0, 'Multiply': 0, 'Divide': 0}
 
         # Week 06: Storing allInOne Function's data into local list 
@@ -73,7 +79,6 @@ while cont == True:
         if MyLib.isinrange(low,high,numA) == True and MyLib.isinrange(low,high,numB) == True:
         
         # Week 06: Changed Print Response to Reflect Assignment Requirements
-        #          All results are pulled from res dictionary per assignment requirements 
             if finalSimpleUI == '+':
                 print(str(numA) + " + " + str(numB) + " = " + str(res['Add']))
             elif finalSimpleUI == '-':
@@ -91,10 +96,10 @@ while cont == True:
                 print("Thank You. Your Final Res Dictionary Is:\n", res)
                 cont = False
 
-            # Week 06: Again calling Func to Ask the user what they want to do
-            finalSimpleUI = MyLib.userInputFunc()
+            userSelect = input("Please select one of the following:\n***Hint: You can select the number for your selection***\n1. " + menu[0] + "\n2. " + menu[1] + "\n3. " + menu[2] + "\n4. " + menu[3] + "\n5. " + menu[4] + "\n6. " + menu[5] + "\n\n")
             
-            # Week 06: Loop starts over if user selects anything but "exit"
+            finalSimpleUI = MyLib.simpleUI(userSelect)
+            
             if finalSimpleUI == 'e':
                 print("Thank You. Your Final Res Dictionary Is:\n", res)
                 cont = False
@@ -104,4 +109,9 @@ while cont == True:
         else:
             print("No Calculations Made")
             cont = False
-
+            # numA = False
+            # numB = False
+            # highNum = False
+            # lowNum = False
+            # bugA = True
+            # bugB = True
