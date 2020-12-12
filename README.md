@@ -1,5 +1,19 @@
 # AMU_IntroToPython
 
+## 2020 12 11 : 0800 || Week 06 Assignment
+Continue working on the assignment.  I uploaded yesterday’s work, today.  I was too tired and my brain hurt.  I feel like I got far with a lot of spaghetti code.  Some things look like I could fix them and make cleaner.  Other things are broken and have first priority.  
+
+### 1030 || Division Issue
+Figured out why the error detection on wasn’t working on one part of the code but on another.  I forgot to “return” the values.  It was a case of “one of these things doesn’t look like another.”  Now that it’s done, I’m going to make sure it meets the assignment requirements.  Then it’s time to ship!!!  On to the next, LOL!
+
+### 1300 || Week 06 Branch
+I have it working but I want tot week things to see if I can make it better.  I’m making a “local branch” in another sub folder to try some of those changes.  
+
+### 1430 || Week 06 Revised
+Created a branch and “cleaned” up some code.  I like it better this way and I think it still meets the assignment requirements.  I finished and moved the branch into the main folder.  The older I pushed into an archive, “just in case” I’m off the mark on this one.  Finally, I pushed up the work to AMU… It’s in their hands.  I got to move on.  Great artist ship!
+
+-----------------------------------------------------------------------------
+
 ## 2020 12 10 : 0830 || Week 06 Assignment
 Started the work on the assignment.  Working with the instructions and “sketching” the possibilities using J NB.
 
