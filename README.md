@@ -12,6 +12,10 @@ I have it working but I want tot week things to see if I can make it better.  I�
 ### 1430 || Week 06 Revised
 Created a branch and “cleaned” up some code.  I like it better this way and I think it still meets the assignment requirements.  I finished and moved the branch into the main folder.  The older I pushed into an archive, “just in case” I’m off the mark on this one.  Finally, I pushed up the work to AMU… It’s in their hands.  I got to move on.  Great artist ship!
 
+#### 2030 || Week 06 Second Revision
+I couldn’t help but think there were better ways of fixing the code that looked a lot more like the instructor’s examples.  Then I remembered the allInOne function only had two parameters.  That just wasn’t how I did it.  I had three because I was trying to work out what operation would be done, and only that was stored in the AIO list.  Then I realized I was doing this twice.  The AIO should just calculate all the operations and later the print function would ONLY show what the user wanted to have calculated.  This meant my AIO function was reduced a ton. 
+Then I, through trial and error, I learned that I could store the function’s list returns in the dictionary without needing to first dedicate another list within the main code.  I.E.  myDict[‘name’] = MyLib.allInOne(numA, numB)[0] placed the value in the list into my dictionary value with the item ‘name’  … That is incredible!
+
 -----------------------------------------------------------------------------
 
 ## 2020 12 10 : 0830 || Week 06 Assignment
