@@ -56,11 +56,30 @@ def userInputFunc():
     #          response.  --> Code Above
     return simpleUI(selection)
 
-# Week 06: Changed sCalc to AllInOne Function.  Numbers are calculated with all operations
-#          and return to main code as a "all in one" list.  Later 
-def allInOne(a, b):
-    m = addNum(a, b)
-    n = subNum(a, b)
-    o = multNum(a, b)
-    p = divNum(a, b)
-    return m, n, o, p
+
+# Week 06: Changed sCalc to AllInOne Function.  Based on what the User wants to do
+#          the function returns the calculations as a list.  The list is later
+#          placed into the "res" dictionary and will be printed accordingly
+def allInOne(a, b, operator):
+    if operator == "+":
+        m = addNum(a, b)
+        return m, 0, 0, 0
+    elif operator == "-":
+        n = subNum(a, b)
+        return 0, n, 0, 0
+    elif operator == "*":
+        o = multNum(a, b)
+        return 0, 0, o, 0
+    elif operator == "/":
+        p = divNum(a, b)
+        return 0, 0, 0, p
+    elif operator == "a":
+        m = addNum(a, b)
+        n = subNum(a, b)
+        o = multNum(a, b)
+        p = divNum(a, b)
+        return m, n, o, p
+    elif operator == 'e':
+        return 0, 0, 0, 0
+    else:
+        return 0, 0, 0, 0

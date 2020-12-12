@@ -59,12 +59,15 @@ while cont == True:
         # Week 06: Establishing the res dictionary per Assignment Requirements
         res = {'Add': 0, 'Subtract': 0, 'Multiply': 0, 'Divide': 0}
 
-        # Week 06: Storing data from allInOne list (from MyLib) into
+        # Week 06: Storing allInOne Function's data into local list 
+        convAllInOneList = MyLib.allInOne(numA, numB, finalSimpleUI)
+
+        # Week 06: Storing data from conversion list (data from allInOne) into
         # each item of the res dictionary
-        res['Add'] = MyLib.allInOne(numA, numB)[0]
-        res['Subtract'] = MyLib.allInOne(numA, numB)[1]
-        res['Multiply'] = MyLib.allInOne(numA, numB)[2]
-        res['Divide'] = MyLib.allInOne(numA, numB)[3]
+        res['Add'] = convAllInOneList[0]
+        res['Subtract'] = convAllInOneList[1]
+        res['Multiply'] = convAllInOneList[2]
+        res['Divide'] = convAllInOneList[3]
 
         # Old...Error detection function called twice
         if MyLib.isinrange(low,high,numA) == True and MyLib.isinrange(low,high,numB) == True:
