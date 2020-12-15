@@ -1,5 +1,10 @@
 # AMU_IntroToPython
 
+## 2020 12 14 : 2030 || Week 07 Lesson
+Spent the day trying to understand classes in Python.  Went through the lessons within JSN.  I’ll upload my JSN when I have completed the week.  I’ll need to ask the instructor what exactly he wants for the assignment.  (He isn’t really good at instructing on the assignments…)
+
+-----------------------------------------------------------------------------
+
 ## 2020 12 11 : 0800 || Week 06 Assignment
 Continue working on the assignment.  I uploaded yesterday’s work, today.  I was too tired and my brain hurt.  I feel like I got far with a lot of spaghetti code.  Some things look like I could fix them and make cleaner.  Other things are broken and have first priority.  
 
