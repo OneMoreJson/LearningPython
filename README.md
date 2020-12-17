@@ -1,5 +1,10 @@
 # AMU_IntroToPython
 
+## 2020 12 16 : 1900 || Week 07 Forum
+Responded to any questions towards the forums.  Also (this is partially blending projects, but…) I am competing OOP focus LI class.  More in the LI Repo.
+
+-----------------------------------------------------------------------------
+
 ## 2020 12 15 : 2100 || Week 07 Forum 
 Completed.  Actually debugged someone else’s code.  It helps to solidify what I know… or realize what works and doesn’t!  I think I’ll pull other Python stuff from GH to check other’s work. It help me learn to be a much better coder.
 
