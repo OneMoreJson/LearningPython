@@ -1,5 +1,15 @@
 # AMU_IntroToPython
 
+## 2020 12 16 : 1900 || Week 07 Forum
+Responded to any questions towards the forums.  Also (this is partially blending projects, but…) I am competing OOP focus LI class.  More in the LI Repo.
+
+-----------------------------------------------------------------------------
+
+## 2020 12 15 : 2100 || Week 07 Forum 
+Completed.  Actually debugged someone else’s code.  It helps to solidify what I know… or realize what works and doesn’t!  I think I’ll pull other Python stuff from GH to check other’s work. It help me learn to be a much better coder.
+
+-----------------------------------------------------------------------------
+
 ## 2020 12 14 : 2030 || Week 07 Lesson
 Spent the day trying to understand classes in Python.  Went through the lessons within JSN.  I’ll upload my JSN when I have completed the week.  I’ll need to ask the instructor what exactly he wants for the assignment.  (He isn’t really good at instructing on the assignments…)
 
