@@ -1,5 +1,13 @@
 # AMU_IntroToPython
 
+## 2020 12 17 : 0830 || Week 07 Assignment
+Sandboxing the assignment. Trying to figure out how this stuff can be put into a class and then later called to perform the main calculations.
+
+### 2010 || Week 07 Assignment
+Completed with a good checks.  I emailed the instructor to find out if the class needs to be in a new document or if we are expected to leave it in MyLib. Moved the JN within a new doc.  
+
+-----------------------------------------------------------------------------
+
 ## 2020 12 16 : 1900 || Week 07 Forum
 Responded to any questions towards the forums.  Also (this is partially blending projects, but…) I am competing OOP focus LI class.  More in the LI Repo.
 
