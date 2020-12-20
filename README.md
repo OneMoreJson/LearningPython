@@ -1,5 +1,11 @@
 # AMU_IntroToPython
 
+## 2020 12 18 : 0630 || Week 07 Assignment
+On main code, I deleted the unneeded Vars I used to implement the OBJ.  Figured out last night that I could put in int and str inside the argument (parameter) portion and that would hold until I called the user to provide a number and operator.  There is a lot more I could cut out from the code, but “who knows” what the instructor thinks is necessary.  The instructions say build on your last project.  If I took out everything from last week, does that mean “I didn’t do what was instructed?”  I’ve been burned too many times for thinking I knew what was best.  
+Awaiting the instructor’s response to my email before I upload to AMU. 
+
+-----------------------------------------------------------------------------
+
 ## 2020 12 17 : 0830 || Week 07 Assignment
 Sandboxing the assignment. Trying to figure out how this stuff can be put into a class and then later called to perform the main calculations.
 
