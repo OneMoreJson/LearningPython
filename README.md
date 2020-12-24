@@ -1,5 +1,13 @@
 # AMU_IntroToPython
 
+## 2020 12 23 : 0800 || Week 08 Lesson
+Reviewed the lessons and worked them through VSC.  JN wouldn’t really work for the stuff I needed.  It’s ok though.  It took longer to wrap my head around the fact that you might append a document but you need to write function into that doc.  Other than that, I need to respond to the instructors grading of last week’s assignment.  Finally, I need to complete the Forum for this week.  I should do that today since tomorrow is Christmas Eve and I need to find something else for Miya.  
+
+### 1900 || Week 08 Forum
+Completed this week’s forum.  It was a softball, since it didn’t really ask what we learned about this week. 
+
+-----------------------------------------------------------------------------
+
 ## 2020 12 18 : 0630 || Week 07 Assignment
 On main code, I deleted the unneeded Vars I used to implement the OBJ.  Figured out last night that I could put in int and str inside the argument (parameter) portion and that would hold until I called the user to provide a number and operator.  There is a lot more I could cut out from the code, but “who knows” what the instructor thinks is necessary.  The instructions say build on your last project.  If I took out everything from last week, does that mean “I didn’t do what was instructed?”  I’ve been burned too many times for thinking I knew what was best.  
 Awaiting the instructor’s response to my email before I upload to AMU. 
