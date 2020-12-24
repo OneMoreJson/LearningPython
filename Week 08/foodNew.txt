@@ -1,0 +1,6 @@
+ pear,1.0
+celery,0.625
+apple,0.625
+pear,1.0
+celery,0.625
+apple,0.625
