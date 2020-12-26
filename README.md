@@ -1,5 +1,13 @@
 # AMU_IntroToPython
 
+## 2020 12 25 : 1500 || Week 08 Assignment
+Focus on completing the entire assignment.  Will review Saturday and submit Sunday.
+
+### 2230 || Assignment
+I think I’ve done what I can.  It isn’t perfect.  I am kind of proud I got this far.  However, who knows what the instructor wants.  I’m going to send this in and the guy is going to tell me he wanted this or that… According to the requirements, I met every one of those!  …Alright, I’m venting.  This is 95% done.  I’m putting it up for tonight.  I’ll focus on the web dev project tomorrow and then give this a review.  Good for now.  Maybe good enough to ship.
+
+-----------------------------------------------------------------------------
+
 ## 2020 12 23 : 0800 || Week 08 Lesson
 Reviewed the lessons and worked them through VSC.  JN wouldn’t really work for the stuff I needed.  It’s ok though.  It took longer to wrap my head around the fact that you might append a document but you need to write function into that doc.  Other than that, I need to respond to the instructors grading of last week’s assignment.  Finally, I need to complete the Forum for this week.  I should do that today since tomorrow is Christmas Eve and I need to find something else for Miya.  
 
