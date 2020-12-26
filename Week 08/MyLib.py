@@ -58,9 +58,9 @@ class Calc:
     
     # Move Menu
     def userInputMeth(self):
-        menu = ["Add", "Subtract", "Multiply", "Divide", "All", "Exit"]
+        menu = ["Add", "Subtract", "Multiply", "Divide", "All Operators", "SCALC", "Save Last Answer to File", "Read a File", "Exit"]
 
-        r = input("Please select one of the following:\n****Hint: You can select the number or type the word****\n1. " + menu[0] + "\n2. " + menu[1] + "\n3. " + menu[2] + "\n4. " + menu[3] + "\n5. " + menu[4] + "\n6. " + menu[5] + "\n\n")        
+        r = input("Please select one of the following:\n****Hint: You can select the number or type the word****\n1. " + menu[0] + "\n2. " + menu[1] + "\n3. " + menu[2] + "\n4. " + menu[3] + "\n5. " + menu[4] + "\n6. " + menu[5] + "\n7. " + menu[6] + "\n8. " + menu[7] + "\n9. " + menu[8] + "\n\n")        
 
         if r == "1" or r.lower() == "add" or r.lower() == "a":
             self.r = "+"
@@ -74,10 +74,19 @@ class Calc:
         elif r == "4" or r.lower() == "divide" or r.lower() == "d":
             self.r = "/"
             return self.r
-        elif r == "5" or r.lower() == "all":
+        elif r == "5" or r.lower() == "all" or r.lower() == "all operators":
             self.r = "a"
             return self.r
-        elif r == '6' or r.lower() == "exit" or r.lower() == "e":
+        elif r == "6" or r.lower() == "scalc" or r.lower() == "sc":
+            self.r = "sc"
+            return self.r
+        elif r == "7" or r.lower() == "save" or r.lower() == "save last answer to file" or r.lower() == "sl":
+            self.r = "sl"
+            return self.r
+        elif r == "8" or r.lower() == "read" or r.lower() == "read a file"or r.lower() == "rf":
+            self.r = "rf"
+            return self.r
+        elif r == '9' or r.lower() == "exit" or r.lower() == "e":
             self.r = "e"
             return self.r
         else:

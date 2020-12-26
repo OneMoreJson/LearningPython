@@ -123,6 +123,8 @@
 
 # ------------------------Deleting a file
 
-import os
-os.remove("food.txt")
-print("food.txt was removed")
+# import os
+# os.remove("food.txt")
+# print("food.txt was removed")
+
+# 
