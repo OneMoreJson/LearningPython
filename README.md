@@ -1,5 +1,10 @@
 # AMU_IntroToPython
 
+## 2020 12 26 : 2330 || Week 08 Assignment
+Updated the files with new comments for the week.  I also test the work.  Tomorrow, I think I’ll make docs showing how this things works and how much I’ve tested it.  Then, I need to send it up and hope the instructor things he was perfectly clear on his instruction… “I didn’t want a calculator… I wanted a Teddy Ruxspin.” …sigh. 
+
+-----------------------------------------------------------------------------
+
 ## 2020 12 25 : 1500 || Week 08 Assignment
 Focus on completing the entire assignment.  Will review Saturday and submit Sunday.
 
