@@ -1,5 +1,10 @@
 # AMU_IntroToPython
 
+## 2020 12 27 : 1100 || Week 08 Assignment
+Completed assignment and uploaded everything to AMU.  I also created a word doc to explain what I did for testing.  Knowing this instructor, it won’t matter.  He’ll say something was supposed to be done, even though the instructions don’t say anything about what he is wanting completed.  This class was fun, but the instructor sucked. Dr. Bowler.  Remember that name cause, I don’t want to deal with him ever again.  Some students say they are questioning life choices because this guy sucks as an instructor.  
+
+-----------------------------------------------------------------------------
+
 ## 2020 12 26 : 2330 || Week 08 Assignment
 Updated the files with new comments for the week.  I also test the work.  Tomorrow, I think I’ll make docs showing how this things works and how much I’ve tested it.  Then, I need to send it up and hope the instructor things he was perfectly clear on his instruction… “I didn’t want a calculator… I wanted a Teddy Ruxspin.” …sigh. 
 
