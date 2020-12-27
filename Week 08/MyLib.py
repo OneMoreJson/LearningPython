@@ -94,6 +94,3 @@ class Calc:
         else:
             self.r = "e"
             return self.r
-
-
-

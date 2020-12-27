@@ -38,7 +38,7 @@ else:
             break
         elif calcObj.r == 'sc':
             try:
-                print("Here is the res library... This library comes from the All-In-One Function located in the MyLib module holding the Calc Class:\n", res, "\nHowever, you might have wanted all the different operations so I provided them here:\n", answer)
+                print("Here is the res library... \nThis library comes from the All-In-One Function located in the MyLib module holding the Calc Class:\n", res, "\nHowever, you might have wanted  the last operations, so I provided it/them here:\n", answer)
             except NameError: 
                 print("At the moment, no caclulations can be displayed")
                 calcObj.userInputMeth()
@@ -142,7 +142,7 @@ else:
                 break
 
             elif calcObj.r == 'sc':
-                print("Here is the res library... This library comes from the All-In-One Function located in the MyLib module holding the Calc Class:\n", res, "\nHowever, you might have wanted all the different operations so I provided them here:\n", answer)
+                print("Here is the res library...\nThis library comes from the All-In-One Function located in the MyLib module holding the Calc Class:\n", res, "\nHowever, you might have wanted the last operation so I provided it/them here:\n", answer)
                 calcObj.userInputMeth()
             
             elif calcObj.r == 'sl':
