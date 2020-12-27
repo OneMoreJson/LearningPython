@@ -14,12 +14,13 @@ from MyLib import Calc
 class UserInputOutsideRange(Exception):
     pass
 
-# Old... Build OBJ from imported Class
+# Week 08: Replaced int with numbers and a string
 calcObj = Calc(0, 0, 0, 0, " ")
 
 # Old... Selection from menu
 calcObj.userInputMeth()
 
+# Week 08: Added if else to keep from errors on initial menu selection
 if calcObj.r == 'e':
     print("You selected 'Exit.' ")
 elif calcObj.r == 'sc':
@@ -31,6 +32,7 @@ else:
     cont = True
     while cont == True:
         
+        # Week 08: Added additional elif statement to handle new menu selections
         if calcObj.r == 'e':
             cont = False
             break
@@ -102,7 +104,10 @@ else:
             res['Multiply'] = calcObj.allInOne(calcObj.a, calcObj.b, calcObj.low, calcObj.high)[2]
             res['Divide'] = calcObj.allInOne(calcObj.a, calcObj.b, calcObj.low, calcObj.high)[3]
 
-            # Old... Mod with OBJ and Keeping the Local Dictionary
+            # Week 08: Changed all to string results; I know there are other 
+            #          things I could do, but this let me simply write the 
+            #          results in a file.  I believe THIS was optional so I 
+            #          chose to write data to a file in this manner
             if calcObj.r == '+':
                 answer = str(calcObj.a) + str(calcObj.r) + str(calcObj.b) + "=" + str(res['Add'])
                 print(answer)
@@ -128,7 +133,8 @@ else:
                 cont = False
                 break
             
-            # Old... Loop starts over with obj method
+            # Week 08: Loop starts over; added more responses for the new menu
+            #          results
             calcObj.userInputMeth()
             if calcObj.r == 'e':
                 print("Thank You. Your Final Res Dictionary Is:\n", res)

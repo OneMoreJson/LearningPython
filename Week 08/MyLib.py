@@ -1,8 +1,8 @@
-# adding all the functions to the class to be used in the main  code
+# Old...adding all the functions to the class to be used in the main code
 
 class Calc:
     
-    # Move Calc Functions
+    # Old... Move Calc Functions
     def __init__(self, a, b, low, high, r):
         self.a = a
         self.b = b
@@ -25,27 +25,27 @@ class Calc:
         except ZeroDivisionError:
             return "Unable by zero"
 
-    # Get Low Number
+    # Old... Get Low Number
     def getLowMeth(self):
         self.low = int(input("Please select your low number between 100 and -100:  "))
         return self.low
 
-    # Get Low Number
+    # Old... Get Low Number
     def getHighMeth(self):
         self.high = int(input("Please select your high number between 100 and -100:  "))
         return self.high
 
-    # Get First Calc Number
+    # Old... Get First Calc Number
     def getFirstNumMeth(self):
         self.a = int(input("Please select the first number between " + str(self.high) + " and " + str(self.low) + " to be calculated:  "))
         return self.a
     
-    # Get Second Calc Number
+    # Old... Get Second Calc Number
     def getSecondNumMeth(self):
         self.b = int(input("Please select the Second number between " + str(self.high) + " and " + str(self.low) + " to be calculated:  "))    
         return self.b
 
-    # Move and Combine Range Check and All In One
+    # Old... Move and Combine Range Check and All In One and SCALC
     def allInOne (self, a, b, low, high):
         if self.a > self.low and self.a < self.high and self.b > self.low and self.b < self.high:
             m = self.addMeth(a, b)
@@ -56,12 +56,14 @@ class Calc:
         else:
             return 0, 0, 0, 0
     
-    # Move Menu
+    # Week 08: Return SCALC to menu.  Added "Save" and "Read File" to menu
     def userInputMeth(self):
         menu = ["Add", "Subtract", "Multiply", "Divide", "All Operators", "SCALC", "Save Last Answer to File", "Read a File", "Exit"]
 
+        # Week 08: Gets User input for action
         r = input("Please select one of the following:\n****Hint: You can select the number or type the word****\n1. " + menu[0] + "\n2. " + menu[1] + "\n3. " + menu[2] + "\n4. " + menu[3] + "\n5. " + menu[4] + "\n6. " + menu[5] + "\n7. " + menu[6] + "\n8. " + menu[7] + "\n9. " + menu[8] + "\n\n")        
 
+        # Week 08: Simplifies response to a specific string.  Added new menu items
         if r == "1" or r.lower() == "add" or r.lower() == "a":
             self.r = "+"
             return self.r
