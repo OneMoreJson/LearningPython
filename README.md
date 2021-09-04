@@ -1,4 +1,4 @@
-# AMU_IntroToPython
+# Learning Python
 
 ## Admin 
 
