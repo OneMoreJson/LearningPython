@@ -1,4 +1,12 @@
-# AMU_IntroToPython
+# Learning Python
+
+## Admin 
+
+### 2021 09 04 0800 || Updates
+
+Reworking the folder system on my local drive.  This will reflect how I have done with the “Learning Java” repo.  Instead of keeping the repo specifically tied to a college, LinkedIn Learning or Udemy course, I will combine projects that I think show both my learning progress and potential portfolio projects.  Note, I think I will take “worthy” projects and post them on my own website… things tend to get lost in the GH tangle.  However, I want to show anyone that I am continuing to advance my skills.  GH seems like a great place to demonstrate a working sketchbook of the notes and projects I have done through the years.  
+
+-----------------------------------------------------------------------------
 
 ## 2020 12 27 : 1100 || Week 08 Assignment
 Completed assignment and uploaded everything to AMU.  I also created a word doc to explain what I did for testing.  Knowing this instructor, it won’t matter.  He’ll say something was supposed to be done, even though the instructions don’t say anything about what he is wanting completed.  This class was fun, but the instructor sucked. Dr. Bowler.  Remember that name cause, I don’t want to deal with him ever again.  Some students say they are questioning life choices because this guy sucks as an instructor.  
