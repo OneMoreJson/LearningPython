@@ -10,6 +10,7 @@
 #      between 1-9 (minus squares taken)
 #   7. Win or loose, player is asked if they want to play again
 #   8. Board Set-Up:
+#
 #        |       |
 #    1   |   2   |   3
 # _______|_______|_______
@@ -22,8 +23,13 @@
 #
 
 
+# IMPORTS
+import random
+
 # VARS
 places = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+playerChoices = []
+compChoices = []
 play = True
 win = False
 
@@ -31,6 +37,13 @@ win = False
 
 
 # Instructions
+def inst():
+    print('Welcome to Py Tick Tack Toe')
+    print('')
+    print('You will be "X" while your opponent will be "O"')
+    print('')
+    print('You will take turns selecting squares')
+    print('If you get three squares in a row, you win!')
 
 
 # Build Board
@@ -46,4 +59,26 @@ def bb():
     print('   {}   |   {}   |   {}' .format(places[6], places[7], places[8]))
     print('       |       |')
 
+
+# Check Valid Choice
+def selectionCheck(choice, places):
+    if(choice in places):
+        return True
+    else:
+        return False
+
+
 # Computer Choice
+def compChoice():
+    out = random.randint(1, 9)
+
+    if(selectionCheck(out, places)):
+        return out
+    else:
+        return compChoice()
+
+# Player Choice
+
+
+def userChoice():
+    print('Please select a number square that has not been taken')
