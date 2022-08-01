@@ -77,8 +77,17 @@ def compChoice():
     else:
         return compChoice()
 
+
 # Player Choice
-
-
 def userChoice():
-    print('Please select a number square that has not been taken')
+    selection = int(
+        input('Please select a number square that has not been taken\n'))
+
+    if(selectionCheck(selection, places)):
+        print(selection)
+        print(places)
+        return selection
+    else:
+        print("I'm sorry, that is an invalid input.")
+        print(places)
+        return userChoice()
