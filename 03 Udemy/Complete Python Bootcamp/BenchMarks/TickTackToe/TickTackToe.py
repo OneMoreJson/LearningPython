@@ -62,6 +62,7 @@ def bb():
 
 # Check Valid Choice
 def selectionCheck(choice, places):
+
     if(choice in places):
         return True
     else:
@@ -79,15 +80,16 @@ def compChoice():
 
 
 # Player Choice
-def userChoice():
-    selection = int(
-        input('Please select a number square that has not been taken\n'))
+def playerChoice():
+    try:
+        selection = int(input(
+            'Please select a number square that has not been taken\n'))
+    except ValueError:
+        print('That was not a number...')
+        return playerChoice()
 
     if(selectionCheck(selection, places)):
-        print(selection)
-        print(places)
         return selection
     else:
         print("I'm sorry, that is an invalid input.")
-        print(places)
-        return userChoice()
+        return playerChoice()
