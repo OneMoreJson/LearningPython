@@ -30,6 +30,7 @@ import random
 places = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 playerChoices = []
 compChoices = []
+playerTurn = True
 play = True
 win = False
 
@@ -93,3 +94,60 @@ def playerChoice():
     else:
         print("I'm sorry, that is an invalid input.")
         return playerChoice()
+
+
+# Replace Square number with X or O
+def replaceSquare(xo, selection, places):
+    for i in range(len(places)):
+        if places[i] == selection:
+            places[i] = xo
+    bb()
+    return places
+
+
+# Winner?
+def checkWinner(playerSelections, playerTurn):
+    if playerSelections == [1, 2, 3]:
+        print("winner!!!")
+    else:
+        playerTurn = not playerTurn
+        runGame(playerTurn)
+
+
+# Run Game (Start with player)
+def runGame(playerTurn):
+
+    if(playerTurn):
+        # Displays
+        print('--------> Player\'s Move <--------\n')
+        # Player selects
+        selection = playerChoice()
+        # Store selection in player list
+        playerChoices.append(selection)
+        # Change Board list
+        # Rewrite Board
+        replaceSquare('X', selection, places)
+
+        # Check if there is a win
+        # change players
+        checkWinner(playerChoices, playerTurn)
+
+        print('\n')
+
+    else:
+        # Displays
+        print('--------> Computers\'s Move <--------\n')
+
+        # Comp selects
+        selection = compChoice()
+        # Store selection in comp list
+        compChoices.append(selection)
+        # Change Board list
+        # Rewrite Board
+        replaceSquare('O', selection, places)
+
+        # Check if there is a win
+        # change players
+        checkWinner(compChoices, playerTurn)
+
+        print('\n')
