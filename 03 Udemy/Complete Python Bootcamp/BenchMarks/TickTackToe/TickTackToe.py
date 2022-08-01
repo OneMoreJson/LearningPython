@@ -47,7 +47,13 @@ def inst():
     print('If you get three squares in a row, you win!')
 
 
+# Continue?
+def contGame():
+    print('Menu on whether the player wants to play again will be here...')
+
 # Build Board
+
+
 def bb():
 
     print('       |       |')
@@ -107,8 +113,30 @@ def replaceSquare(xo, selection, places):
 
 # Winner?
 def checkWinner(playerSelections, playerTurn):
-    if playerSelections == [1, 2, 3]:
-        print("winner!!!")
+    win1 = [1, 2, 3]
+    win2 = [4, 5, 6]
+    win3 = [7, 8, 9]
+    win4 = [1, 4, 7]
+    win5 = [2, 5, 8]
+    win6 = [3, 6, 9]
+    win7 = [1, 5, 9]
+    win8 = [3, 5, 7]
+
+    win1Check = all(elem in playerSelections for elem in win1)
+    win2Check = all(elem in playerSelections for elem in win2)
+    win3Check = all(elem in playerSelections for elem in win3)
+    win4Check = all(elem in playerSelections for elem in win4)
+    win5Check = all(elem in playerSelections for elem in win5)
+    win6Check = all(elem in playerSelections for elem in win6)
+    win7Check = all(elem in playerSelections for elem in win7)
+    win8Check = all(elem in playerSelections for elem in win8)
+
+    if win1Check or win2Check or win3Check or win4Check or win5Check or win6Check or win7Check or win8Check:
+        print("Winner!!!")
+    elif len(playerChoices) == 5:
+        print('##############################\n')
+        print("Game is a Draw!")
+        contGame()
     else:
         playerTurn = not playerTurn
         runGame(playerTurn)
@@ -140,7 +168,7 @@ def runGame(playerTurn):
 
         # Comp selects
         selection = compChoice()
-        # Store selection in comp list
+        # Store selection in comp list``
         compChoices.append(selection)
         # Change Board list
         # Rewrite Board
