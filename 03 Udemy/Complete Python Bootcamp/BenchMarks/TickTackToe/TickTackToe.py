@@ -25,6 +25,7 @@
 
 # IMPORTS
 import random
+from IPython.display import clear_output
 
 # VARS
 places = [1, 2, 3, 4, 5, 6, 7, 8, 9]
@@ -45,16 +46,35 @@ def inst():
     print('')
     print('You will take turns selecting squares')
     print('If you get three squares in a row, you win!')
+    print('\n\n')
+    runGame(playerTurn)
 
 
 # Continue?
 def contGame():
-    print('Menu on whether the player wants to play again will be here...')
+    choice = input('Would you like to play again? (Yes or Now)').lower()
+
+    if choice == 'yes' or choice == 'y':
+        places = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+        playerChoices = []
+        ompChoices = []
+        return runGame(playerTurn)
+    elif choice == 'no' or choice == 'n':
+        return endGame()
+    else:
+        print('That was an invalid answer...')
+        return contGame()
+
+
+# End Game
+def endGame():
+    print('Thank you for playing Py Tick Tack Toe!')
+
 
 # Build Board
-
-
 def bb():
+
+    clear_output()
 
     print('       |       |')
     print('   {}   |   {}   |   {}' .format(places[0], places[1], places[2]))
@@ -65,7 +85,7 @@ def bb():
     print('       |       |')
     print('   {}   |   {}   |   {}' .format(places[6], places[7], places[8]))
     print('       |       |')
-    print('\n\n\n')
+    print('\n')
 
 
 # Check Valid Choice
@@ -113,7 +133,7 @@ def replaceSquare(xo, selection, places):
 
 
 # Winner?
-def checkWinner(playerSelections, playerTurn):
+def checkWinner(playerSelections, playerTurn, player):
     win1 = [1, 2, 3]
     win2 = [4, 5, 6]
     win3 = [7, 8, 9]
@@ -133,7 +153,7 @@ def checkWinner(playerSelections, playerTurn):
     win8Check = all(elem in playerSelections for elem in win8)
 
     if win1Check or win2Check or win3Check or win4Check or win5Check or win6Check or win7Check or win8Check:
-        print("Winner!!!")
+        print('{} Won!!!' .format(player))
     elif len(playerChoices) == 5:
         print('##############################\n')
         print("Game is a Draw!")
@@ -147,8 +167,6 @@ def checkWinner(playerSelections, playerTurn):
 def runGame(playerTurn):
 
     if(playerTurn):
-        # Displays
-        print('--------> Player\'s Move <--------\n')
         # Player selects
         selection = playerChoice()
         # Store selection in player list
@@ -159,13 +177,11 @@ def runGame(playerTurn):
 
         # Check if there is a win
         # change players
-        checkWinner(playerChoices, playerTurn)
+        checkWinner(playerChoices, playerTurn, 'You')
 
         print('\n')
 
     else:
-        # Displays
-        print('--------> Computers\'s Move <--------\n')
 
         # Comp selects
         selection = compChoice()
@@ -177,6 +193,6 @@ def runGame(playerTurn):
 
         # Check if there is a win
         # change players
-        checkWinner(compChoices, playerTurn)
+        checkWinner(compChoices, playerTurn, 'Computer')
 
         print('\n')
