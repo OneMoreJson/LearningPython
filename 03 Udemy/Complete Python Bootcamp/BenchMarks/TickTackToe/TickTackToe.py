@@ -47,7 +47,6 @@ def inst():
     print('You will take turns selecting squares')
     print('If you get three squares in a row, you win!')
     print('\n\n')
-    runGame(playerTurn)
 
 
 # Continue?
@@ -196,3 +195,10 @@ def runGame(playerTurn):
         checkWinner(compChoices, playerTurn, 'Computer')
 
         print('\n')
+
+
+# START GAME
+def startGame():
+    bb()
+    inst()
+    playerChoice()
