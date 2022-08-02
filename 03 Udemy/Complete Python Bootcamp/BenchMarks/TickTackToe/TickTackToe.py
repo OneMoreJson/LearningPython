@@ -65,6 +65,7 @@ def bb():
     print('       |       |')
     print('   {}   |   {}   |   {}' .format(places[6], places[7], places[8]))
     print('       |       |')
+    print('\n\n\n')
 
 
 # Check Valid Choice
