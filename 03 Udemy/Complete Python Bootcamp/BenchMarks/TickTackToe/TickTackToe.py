@@ -73,8 +73,6 @@ def endGame():
 # Build Board
 def bb():
 
-    clear_output()
-
     print('       |       |')
     print('   {}   |   {}   |   {}' .format(places[0], places[1], places[2]))
     print('_______|_______|_______')
