@@ -1,5 +1,13 @@
 # Learning Python
 
+## Continue As Able
+
+### 2022 10 2030 || Need to Finish
+
+Every little step forward is closer to the end
+
+---
+
 ## Back
 
 ### 2022 07 22 2339 || Returning
